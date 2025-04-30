@@ -1,6 +1,6 @@
 $schema: "1.0"
 name: "custom-image"
-image: /subscriptions/3de261df-f2d8-4c00-a0ee-a0be30f1e48e/resourceGroups/GJYRG0411/providers/Microsoft.Compute/galleries/GJYSIG0411/images/GJY-IMG-0411
+image: DevCenterlacodfproj3/backend-eng@1.0.0
 description: "Testing with custom image"
 
 tasks:
