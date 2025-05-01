@@ -1,6 +1,6 @@
 $schema: "1.0"
 name: "custom-image"
-image: DevCenterdrieleeastasiaproj6969/driele-def@1.0.0
+image: DevCenterlacoeuapbillingtesting5486/frontend-eng@1.0.0
 description: "Testing with custom image"
 
 tasks:
