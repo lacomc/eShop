@@ -1,6 +1,6 @@
 $schema: "1.0"
 name: "frontend-eng"
-image: win11-21h2-ent-cpc
+image: DevCenteracaseyproject38174/laco-test-noHibernate@1.0.0
 description: "This definition is for the eShop frontend engineering environment"
 
 tasks:
