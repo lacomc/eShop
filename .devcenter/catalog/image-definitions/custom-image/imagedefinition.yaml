@@ -1,6 +1,6 @@
 $schema: "1.0"
 name: "custom-image"
-image: DevCenteracaseyproject38174/laco-test-noHibernate@1.0.0
+image: DevCenteracaseyproject38174/laco-test-noHibernate
 description: "Testing with custom image"
 
 tasks:
