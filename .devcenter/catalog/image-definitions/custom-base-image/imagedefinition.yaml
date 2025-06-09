@@ -1,6 +1,6 @@
 $schema: "1.0"
 name: "custom-base-image"
-image: drielegallery/dri-image@1.0.1
+image: ally_gallery/clone-repo@1.0.0
 description: "This definition is for the eShop frontend engineering environment"
 
 tasks:
