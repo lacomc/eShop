@@ -1,7 +1,7 @@
 $schema: "1.0"
-name: "custom-base-image"
-image: ally_gallery/clone-repo@1.0.0
-description: "This definition is for the eShop frontend engineering environment"
+name: "mp-hib-enabled"
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+description: "Marketplace image with hibernation enabled for testing purposes"
 
 tasks:
   - name: winget
