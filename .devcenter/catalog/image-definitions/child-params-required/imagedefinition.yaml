@@ -1,0 +1,13 @@
+$schema: "1.0"
+name: "child-params-required"
+extends:
+  imageDefinition: "parent-params-required"
+  parameters:
+    echoMessageRequired: 'Hello from child-params-required!'
+description: "This definition is for the eShop frontend engineering environment"
+
+tasks:
+  - name: powershell
+    parameters:
+      command: |
+        Set-Content -Path "C:\a.txt" -Value "${{ parameters.echoMessageRequired }}"
