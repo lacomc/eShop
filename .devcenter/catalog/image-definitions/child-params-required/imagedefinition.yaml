@@ -6,8 +6,14 @@ extends:
     echoMessageRequired: 'Hello from child-params-required!'
 description: "This definition is for the eShop frontend engineering environment"
 
+parameters:
+  echoMessageRequiredChild:
+    default: 'Hello from parent-params-required - child parameter!'
+    type: 'string'
+    required: true
+
 tasks:
   - name: powershell
     parameters:
       command: |
-        Set-Content -Path "C:\a.txt" -Value "${{ parameters.echoMessageRequired }}"
+        Set-Content -Path "C:\a.txt" -Value "${{ parameters.echoMessageRequiredChild }}"
