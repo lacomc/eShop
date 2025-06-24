@@ -9,5 +9,6 @@ parameters:
     required: false
 tasks:
   - name: powershell
-    script: |
-      Set-Content -Path "C:\a.txt" -Value "${{ parameters.echoMessageNonRequired }}"
+    parameters:
+      command: |
+        Set-Content -Path "C:\a.txt" -Value "${{ parameters.echoMessageNonRequired }}"

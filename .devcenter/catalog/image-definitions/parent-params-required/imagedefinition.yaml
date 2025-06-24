@@ -11,5 +11,6 @@ parameters:
 
 tasks:
   - name: powershell
-    script: |
-      Set-Content -Path "C:\a.txt" -Value "${{ parameters.echoMessageRequired }}"
+    parameters:
+      command: |
+        Set-Content -Path "C:\a.txt" -Value "${{ parameters.echoMessageRequired }}"
