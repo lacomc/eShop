@@ -1,7 +1,7 @@
 $schema: "1.0"
 name: "inheritance-child2"
 extends:
-  imageDefinition: "inheritance-parent"
+  imageDefinition: "custom-hib-enabled"
 description: "This definition is for the eShop frontend engineering environment"
 
 tasks:
