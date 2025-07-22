@@ -1,7 +1,7 @@
 $schema: "1.0"
-name: "inheritance-child1a"
+name: "inheritance-child1"
 extends:
-  imageDefinition: "inheritance-parenta"
+  imageDefinition: "inheritance-child3"
 description: "This definition is for the eShop frontend engineering environment"
 
 tasks:

@@ -1,6 +1,7 @@
 $schema: "1.0"
-name: "inheritance-parenta"
-image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+name: "inheritance-child3"
+extends:
+  imageDefinition: "inheritance-child2"
 description: "This definition is for the eShop frontend engineering environment"
 
 tasks:
