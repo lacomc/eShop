@@ -7,4 +7,4 @@ tasks:
   - name: powershell
     parameters:
       command: |
-        echo "{{https://dtc-prod-inttests.vault.azure.net/secrets/laco-test-secret}}"
+        echo "{{https://dtc-ppe-integrationtests.vault.azure.net/secrets/laco-test-secret}}"
