@@ -1,11 +1,7 @@
 $schema: "1.0"
 name: "inheritance-child2"
 extends:
-  imageDefinition: "inheritance-child1"
+  imageDefinition: "inheritance-parent"
+  parameters:
+    message2: 'Hello #2 from inheritance-child2'
 description: "This definition is for the eShop frontend engineering environment"
-
-tasks:
-  - name: powershell
-    parameters:
-      command: |
-        $env:Path = [System.Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [System.Environment]::GetEnvironmentVariable('Path','User') 
