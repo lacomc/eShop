@@ -1,5 +1,5 @@
 $schema: "1.0"
-name: "inheritance-child1"
+name: "inheritance-child3"
 extends:
   imageDefinition: "inheritance-parent"
   parameters:
