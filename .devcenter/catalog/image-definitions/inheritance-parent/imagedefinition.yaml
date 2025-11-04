@@ -6,11 +6,10 @@ description: "This definition is for the eShop frontend engineering environment"
 parameters:
   message1:
     type: string
-    default: 'Hello from inheritance-parent'
     required: false
   message2:
     type: string
-    default: 'Hello again from inheritance-parent'
+    default: 'Hello #2 from inheritance-parent'
     required: true
 
 tasks:
