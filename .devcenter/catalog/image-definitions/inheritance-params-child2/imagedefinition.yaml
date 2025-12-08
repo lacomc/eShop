@@ -1,7 +1,7 @@
 $schema: "1.0"
-name: "inheritance-child-user-task"
+name: "inheritance-params-child2"
 extends:
   imageDefinition: "inheritance-params-parent"
   parameters:
-    message3: 'Hello #3 from inheritance-child-user-task'
+    message2: 'Hello #2 from inheritance-params-child2'
 description: "This definition is for the eShop frontend engineering environment"
