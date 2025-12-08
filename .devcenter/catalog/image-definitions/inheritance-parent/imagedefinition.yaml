@@ -6,10 +6,15 @@ description: "This definition is for the eShop frontend engineering environment"
 parameters:
   message1:
     type: string
+    default: 'Hello #1 from inheritance-parent'
     required: false
   message2:
     type: string
     default: 'Hello #2 from inheritance-parent'
+    required: true
+  message3:
+    type: string
+    default: 'Hello #3 from inheritance-parent'
     required: true
 
 tasks:
@@ -20,3 +25,8 @@ tasks:
   - name: powershell
     parameters:
       command: echo {{message2}}
+
+userTasks:
+  - name: powershell
+    parameters:
+      command: echo {{message3}}
