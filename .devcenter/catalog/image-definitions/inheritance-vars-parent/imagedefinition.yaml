@@ -1,0 +1,29 @@
+$schema: "1.0"
+name: "inheritance-vars-parent"
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+description: "This definition is for the eShop frontend engineering environment"
+
+variables:
+  message1:
+    type: string
+    value: 'Hello #1 from inheritance-vars-parent'
+  message2:
+    type: string
+    value: 'Hello #2 from inheritance-vars-parent'
+  message3:
+    type: string
+    value: 'Hello #3 from inheritance-vars-parent'
+
+tasks:
+  - name: powershell
+    parameters:
+      command: echo {{message1}}
+      
+  - name: powershell
+    parameters:
+      command: echo {{message2}}
+
+userTasks:
+  - name: powershell
+    parameters:
+      command: echo {{message3}}
