@@ -5,15 +5,18 @@ description: "This definition is for the eShop frontend engineering environment"
 
 variables:
   message1:
-    type: string
+    type: 'string'
     value: 'Hello #1 from inheritance-vars-parent'
+    description: "message1 is a variable from the parent definition"
   message2:
-    type: string
+    type: 'string'
     value: 'Hello #2 from inheritance-vars-parent'
+    description: "message2 is a variable from the parent definition"
   message3:
-    type: string
+    type: 'string'
     value: 'Hello #3 from inheritance-vars-parent'
-
+    description: "message3 is a variable from the parent definition"
+    
 tasks:
   - name: powershell
     parameters:
