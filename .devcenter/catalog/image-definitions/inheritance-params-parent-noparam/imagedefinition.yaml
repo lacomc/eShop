@@ -1,0 +1,28 @@
+$schema: "1.0"
+name: "inheritance-params-parent-noparam"
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+description: "This definition is for the eShop frontend engineering environment"
+
+parameters:
+  message1:
+    type: string
+    default: 'Hello #1 from inheritance-parent'
+    required: false
+  message2:
+    type: string
+    default: 'Hello #2 from inheritance-parent'
+    required: true
+
+tasks:
+  - name: powershell
+    parameters:
+      command: echo {{message1}}
+      
+  - name: powershell
+    parameters:
+      command: echo {{message2}}
+
+userTasks:
+  - name: powershell
+    parameters:
+      command: echo "Hello 3 from inheritance-parent"
