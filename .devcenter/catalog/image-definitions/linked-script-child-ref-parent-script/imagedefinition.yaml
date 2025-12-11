@@ -5,3 +5,9 @@ extends:
   parameters:
     script1: 'C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts\linked-script-parent\write-to-file2.ps1'
 description: "This definition will be used to develop the cached image definition script story"
+
+parameters:
+  script2:
+    type: string
+    default: 'C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts\linked-script-parent\write-to-file2.ps1'
+    description: "The message to write to the file from the cached script"
