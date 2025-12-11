@@ -7,17 +7,17 @@ tasks:
   - name: powershell
     displayName: "Cached Script"
     parameters:
-      script: C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts\linked-script\write-to-file.ps1
+      script: C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts-children\linked-script\write-to-file.ps1
   - name: powershell
     displayName: "Nested Cached Script"
     parameters:
-      script: C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts\linked-script\nest1\nest2\write-to-file.ps1
+      script: C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts-children\linked-script\nest1\nest2\write-to-file.ps1
 userTasks:
   - name: powershell
     displayName: "User Cached Script"
     parameters:
-      script: C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts\linked-script\write-to-file-user.ps1
+      script: C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts-children\linked-script\write-to-file-user.ps1
   - name: powershell
     displayName: "User Nested Cached Script"
     parameters:
-      script: C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts\linked-script\nest1\nest2\write-to-file-user.ps1
+      script: C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts-children\linked-script\nest1\nest2\write-to-file-user.ps1
