@@ -1,1 +1,1 @@
-echo "This is from a cached image definition file in a user task that is a few folders down!!" >> C:\\imaging-cached-script.txt
+echo "This is from a cached image definition file in a user task that is a few folders down!!" >> C:\\Users\\LarissaCox\\Documents\\linked-script-parent-user-nested.txt
