@@ -4,7 +4,7 @@ extends:
   imageDefinition: "linked-script-parent"
   parameters:
     script1: 'C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts-parent\linked-script-parent\write-to-file2.ps1'
-    script2: {{script2}}
+    script2: '{{script2}}'
 description: "This definition will be used to develop the cached image definition script story"
 
 parameters:
