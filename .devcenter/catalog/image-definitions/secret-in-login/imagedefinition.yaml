@@ -1,0 +1,13 @@
+$schema: "1.0"
+name: "secret-in-login"
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+description: "repro of issue faced by customer"
+
+tasks:
+  - name: powershell
+    parameters:
+      command: |
+        az login --service-principal `
+          --username beb6c355-7706-40fa-9b37-57ebf7a60012 `
+          --password '{{https://dtc-ppe-integrationtests.vault.azure.net/secrets/laco-test-secret/355f884540ed4e6db79f8b7491c05b6a}}' `
+          --tenant 556f4662-c7de-4312-9a81-dd4e68521c32 
