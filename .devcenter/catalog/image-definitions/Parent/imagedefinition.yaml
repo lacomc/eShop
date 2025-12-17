@@ -1,0 +1,23 @@
+$schema: "1.0"
+name: "inheritance-parent"
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+description: "Image definition for testing inheritance in image definitions"
+
+parameters:
+  message1:
+    type: string
+    default: 'message1:inheritance-parent'
+  message2:
+    type: string
+    default: 'message2:inheritance-parent'
+
+tasks:
+  - name: powershell
+    displayName: "Parent:Message1"
+    parameters:
+      command: echo {{message1}}
+      
+  - name: powershell
+    displayName: "Parent:Message2"
+    parameters:
+      command: echo {{message2}}

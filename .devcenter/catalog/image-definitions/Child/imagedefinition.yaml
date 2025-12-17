@@ -1,0 +1,18 @@
+$schema: "1.0"
+name: "inheritance-child"
+extends:
+  imageDefinition: "inheritance-parent"
+  parameters:
+    message1: 'message1:inheritance-child'
+description: "Image definition that inherits from inheritance-parent"
+
+parameters:
+  message3:
+    type: string
+    default: 'message3:inheritance-child'
+
+tasks:
+  - name: powershell
+    displayName: "Child:Message3"
+    parameters:
+      command: echo {{message3}}
