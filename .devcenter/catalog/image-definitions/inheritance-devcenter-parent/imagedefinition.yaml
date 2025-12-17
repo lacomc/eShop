@@ -5,7 +5,7 @@ description: "This definition is for the eShop frontend engineering environment"
 
 tasks:
   - name: powershell
-    displayName: "Set Path Environment Variable"
+    displayName: "Set Path Environment Variable?"
     parameters:
       command: |
         $env:Path = [System.Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [System.Environment]::GetEnvironmentVariable('Path','User') 
