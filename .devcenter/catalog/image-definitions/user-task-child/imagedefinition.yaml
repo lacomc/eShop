@@ -1,0 +1,21 @@
+$schema: "1.0"
+name: "user-task-child"
+extends:
+  imageDefinition: "user-task-parent"
+  parameters:
+    script1: 'C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-user-task-inheritance\user-task-child\write-to-file.ps1'
+    script2: 'C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-user-task-inheritance\user-task-child\write-to-file-user.ps1'
+description: "This definition will be used to develop the cached image definition script story"
+
+
+parameters:
+  script3:
+    type: string
+    default: 'C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-user-task-inheritance\user-task-child\write-to-file-user2.ps1'
+    description: "The message to write to the file from the cached script"
+
+userTasks:
+  - name: powershell
+    displayName: "User Cached Script!!!"
+    parameters:
+      script: '{{script3}}'
