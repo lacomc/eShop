@@ -1,7 +1,7 @@
 $schema: "1.0"
-namee: "linked-script-parent"
-imagasdses: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
-descriptasdasdion: "This definition will be used to develop the cached image definition script story"
+name: "linked-script-parent"
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+description: "This definition will be used to develop the cached image definition script story"
 
 parameters:
   script1:
