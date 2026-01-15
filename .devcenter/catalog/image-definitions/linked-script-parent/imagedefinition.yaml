@@ -6,7 +6,7 @@ description: "This definition will be used to develop the cached image definitio
 parameters:
   script1:
     type: string
-    default: 'C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts-parent\linked-script-parent\write-to-file.ps1'
+    default: 'C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts-parent\linked-script-parent\write-to-file123.ps1'
     description: "The message to write to the file from the cached script"
   script2:
     type: string
