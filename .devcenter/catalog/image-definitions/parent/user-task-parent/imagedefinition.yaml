@@ -15,11 +15,11 @@ parameters:
 
 tasks:
   - name: powershell
-    displayName: "Cached Script!!"
+    displayName: "Cached Script"
     parameters:
       script: '{{script1}}'
 userTasks:
   - name: powershell
-    displayName: "User Cached Script!!!"
+    displayName: "User Cached Script"
     parameters:
       script: '{{script2}}'
