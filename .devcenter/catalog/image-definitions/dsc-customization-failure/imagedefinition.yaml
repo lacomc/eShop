@@ -1,0 +1,9 @@
+$schema: "1.0"
+name: "dsc-customization-failure"
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+description: "This is the default definition for the Developer workstation for ILF projects."
+
+tasks:
+  - name: ~/winget
+    parameters:
+      downloadUrl: 'https://raw.githubusercontent.com/contoso-co/common-eng-sys/msft-git/dsc-configurations/common-config.dsc.yaml'
