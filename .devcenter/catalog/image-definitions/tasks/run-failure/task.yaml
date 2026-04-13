@@ -1,0 +1,2 @@
+name: run-failure
+command: "./runFailure.ps1"
