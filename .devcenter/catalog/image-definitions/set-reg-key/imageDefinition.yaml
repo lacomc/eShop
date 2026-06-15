@@ -1,7 +1,10 @@
 $schema: "1.0"
 name: "set-reg-key"
+image: microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc
+description: "Sets reg key that disables OOBE/EULA acceptance requirements for TPM provisioning."
+
 tasks:
   - name: powershell
-    description: Set NoOOBECheck registry key to bypass EULA/OOBE acceptance requirements
+    description: Set NoOOBECheck registry key
     parameters:
       command: "reg add 'HKLM\\System\\CurrentControlSet\\Services\\TPM\\WMI' /v NoOOBECheck /t REG_DWORD /d 1 /f"
