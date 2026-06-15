@@ -1,7 +1,0 @@
-$schema: "1.0"
-name: "linked-script-child-ref-parent-script"
-extends:
-  imageDefinition: "linked-script-parent"
-  parameters:
-    script1: 'C:\ProgramData\Microsoft\DevBoxAgent\ImageDefinitions\eshop-laco-linked-scripts\linked-script-parent\write-to-file2.ps1'
-description: "This definition will be used to develop the cached image definition script story"

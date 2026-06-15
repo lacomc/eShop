@@ -1,0 +1,7 @@
+$schema: "1.0"
+name: "set-reg-key"
+tasks:
+  - name: powershell
+    description: Set NoOOBECheck registry key to bypass EULA/OOBE acceptance requirements
+    parameters:
+      command: "reg add 'HKLM\\System\\CurrentControlSet\\Services\\TPM\\WMI' /v NoOOBECheck /t REG_DWORD /d 1 /f"
