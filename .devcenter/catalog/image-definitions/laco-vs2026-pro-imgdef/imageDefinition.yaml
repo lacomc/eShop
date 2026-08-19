@@ -1,0 +1,12 @@
+$schema: "1.0"
+name: "laco-vs2026-pro-imgdef"
+description: "VS 2026 Professional PPE validation image with a harmless marker."
+image: microsoftvisualstudio_visualstudiolatestplustools_vs-latest-pro-win11-m365-gen2
+
+tasks:
+  - name: ~/powershell
+    description: Create the PREP-PRO-ID validation marker
+    parameters:
+      command: |
+        New-Item -ItemType Directory -Path 'C:\ProgramData\laco-vs2026' -Force | Out-Null
+        Set-Content -Path 'C:\ProgramData\laco-vs2026\PREP-PRO-ID.txt' -Value 'PREP-PRO-ID 2026-08-19T13:40:00.7534757-07:00' -Encoding ascii
